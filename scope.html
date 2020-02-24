@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	  <meta charset="utf-8">
+	  <title>WTF JavaScript?</title>
+	  <meta name="description" content="">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="theme-color" content="#fafafa">
+	</head>
+
+	<body>
+		<script>
+		for(var i = 0; i < 10; i++) {
+			innerLoop();
+		}
+
+		function innerLoop() {
+			// this is a different scope
+			for(i = 0; i < 10; i++) { // i refers to global scope!
+		console.log("What if old man Belfield is librocop's  father");
+			}
+		}
+		</script>
+	</body>
+</html>
