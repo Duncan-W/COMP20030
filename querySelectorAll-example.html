@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>COMP20030 HTML5 Template</title>
+	</head>
+	<body>
+		<p class="my-amazing-class"> Some text </p>
+		<p class="my-amazing-class"> More text </p>
+
+		<script>
+		var theNodeListThing = document.querySelectorAll('.my-amazing-class');
+		var i = 0;
+		while (i < theNodeListThing.length) {
+			var item = theNodeListThing[i].textContent;
+			console.log(item);
+			i = i +1;
+		}
+		</script>
+	</body>
+</html>
