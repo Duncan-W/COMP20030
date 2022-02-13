@@ -6,8 +6,9 @@
 	</head>
 	<body>
 		<button id="button4">I am a button</button> 
-		<script> 
-		var button_variable_name = document.querySelector("#button4");
+		<script>
+		"use strict"; //this prevents accidental implicit global creation
+		let button_variable_name = document.querySelector("#button4");
 		  button_variable_name.addEventListener("click", function() {
 			console.log("Button was clicked.");
 		  });
