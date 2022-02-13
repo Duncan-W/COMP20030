@@ -9,10 +9,11 @@
 		<p class="my-amazing-class"> More text </p>
 
 		<script>
-		var theNodeListThing = document.querySelectorAll('.my-amazing-class');
-		var i = 0;
+		"use strict";
+		let theNodeListThing = document.querySelectorAll('.my-amazing-class');
+		let i = 0;
 		while (i < theNodeListThing.length) {
-			var item = theNodeListThing[i].textContent;
+			let item = theNodeListThing[i].textContent;
 			console.log(item);
 			i = i +1;
 		}
